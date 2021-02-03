@@ -5,8 +5,8 @@ public class Solution{
         ArrayCreator arrayCreator = new ArrayCreator();
         int[] array = arrayCreator.makeArray(100, 1000);
 
-        for (int i = 0; i < array.length;i++){
-            System.out.print(array[i] + " ");
+        for (int i : array) {
+            System.out.print(i + " ");
         }
 
         run(array.clone(), new InsertionSort());
@@ -16,8 +16,8 @@ public class Solution{
     private static void run(int[] array, BaseSort sortMethod) {
         int[] sorterArray = sortMethod.sort(array);
         System.out.println("\n" + sortMethod.name);
-        for (int i = 0; i < sorterArray.length;i++){
-            System.out.print(sorterArray[i] + " ");
+        for (int i : sorterArray) {
+            System.out.print(i + " ");
         }
     }
 }
