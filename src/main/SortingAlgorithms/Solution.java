@@ -11,11 +11,12 @@ public class Solution{
 
         run(array.clone(), new InsertionSort());
         run(array.clone(), new MergeSort());
+        run(array.clone(), new QuickSort());
     }
 
     private static void run(int[] array, BaseSort sortMethod) {
         int[] sorterArray = sortMethod.sort(array);
-        System.out.println("\n" + sortMethod.name);
+        System.out.println("\n" + sortMethod.getClass().getName());
         for (int i : sorterArray) {
             System.out.print(i + " ");
         }

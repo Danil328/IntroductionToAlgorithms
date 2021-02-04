@@ -1,9 +1,7 @@
 package main.SortingAlgorithms;
 
 
-public class InsertionSort extends BaseSort{
-    public String name = "InsertionSort";
-
+public class InsertionSort implements BaseSort{
     public int[] sort(int[] array){
         for (int i = 1; i<array.length; i++){
             int key = array[i];

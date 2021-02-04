@@ -1,9 +1,7 @@
 package main.SortingAlgorithms;
 
 
-public class MergeSort extends BaseSort{
-    public String name = "MergeSort";
-
+public class MergeSort implements BaseSort{
     private int[] mergeSort(int[] array){
         int length = array.length;
 
