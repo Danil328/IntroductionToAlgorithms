@@ -12,6 +12,7 @@ public class Solution{
         run(array.clone(), new InsertionSort());
         run(array.clone(), new MergeSort());
         run(array.clone(), new QuickSort());
+        run(array.clone(), new HeapSort());
     }
 
     private static void run(int[] array, BaseSort sortMethod) {
