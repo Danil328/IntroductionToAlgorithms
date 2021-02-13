@@ -1,5 +1,7 @@
 package main.SortingAlgorithms;
 
+import main.utils.ArrayCreator;
+
 public class Solution{
     public static void main(String[] args) {
         ArrayCreator arrayCreator = new ArrayCreator();
